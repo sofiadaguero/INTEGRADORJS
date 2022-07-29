@@ -1,0 +1,416 @@
+body{
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size:cover;
+    margin-top: 2px;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+
+h1{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    
+}
+
+.grid{
+    display: grid;
+
+    grid-template-columns: [x0]0.3fr [x1]1fr [x2]1fr [x3];
+
+    grid-template-rows: [y0]0.010fr [y1]0.15fr[y2]0.015fr [y3]0.015fr[y4]0.015fr[y5]0.015fr[y6]0.015fr[y7]0.015fr[y8];
+    gap: 2px;
+
+}
+
+/*ENCABEZADO*/
+.encabezado-s{
+    grid-column: x0/x3;
+    grid-row: y0/y1;
+
+    text-align:end ;
+    padding: 10px;
+    margin-left: 2px;
+
+}
+.busca{
+    letter-spacing: 2px;
+    text-align: center;
+    height: 25%;
+    
+
+    padding: 12px;
+    border: 2px solid rgb(158, 158, 123);
+    border-radius: 10px;
+    margin-right: 15px;
+
+}
+
+.buscador{
+    margin-left: 2px;
+    cursor: pointer;
+    font-size: 130%;
+    padding: 10px;
+}
+
+.iconoCarrito{
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 130%;
+    padding: 10px;
+    margin-right: 10px;
+}
+/*SECCION CARRITO-LISTA DE COMPRAS*/
+.lugarCarrito{
+    grid-column: x2/x3;
+    grid-row: y1/y8;
+}
+
+
+
+.cart-item-content{
+    background-color: rgb(199, 180, 164);
+    width: 100%;
+    height: 10%;
+    padding: 2px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px dashed black;
+}
+.cart-item-cantidad{
+    width: 10%;
+    margin-left: 6px;
+}
+  
+.cart-item-nombre{
+    width: 55%;
+    
+}
+.cart-item-precio {
+    
+    width: 10%;
+    text-align: start;
+    
+}
+.botonesAD{
+    width: 10%;
+    text-align: end;
+    font-weight: 600;
+    
+}
+.botonAumentar{
+    background-color: rgb(106, 170, 106);
+    width: 50%;
+}
+
+.botonAumentar:hover{
+    transition: 1s ease;
+    background-color: rgb(77, 136, 77);
+
+    font-weight: 700;
+
+}
+.botonDisminuir{
+    background-color: rgb(211, 118, 118);
+    width: 50%;
+}
+.botonDisminuir:hover{
+    transition: 1s ease;
+    background-color: rgb(227, 86, 86);
+
+    font-weight: 700;
+   
+}
+
+.DivTotal{
+    width: 35%;
+    margin-left: 65%;
+    display: flex;
+    justify-content: flex-start;
+    
+    padding: 7px;
+
+    color: black;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+#finish{
+    width: 35%;
+    margin-left: 65%;
+
+    background-color:rgb(58, 55, 56);
+    color: white;
+    font-weight: 500;
+
+}
+
+#finish:hover{
+    background-color:rgb(68, 182, 57);
+    color: white;
+}
+
+
+.dropdown{
+    
+    
+    background-color: rgb(199, 180, 164);
+    border: 3px solid rgb(31, 30, 30);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 10px;
+    z-index: 1;
+
+    display: none;
+
+}
+
+
+
+
+/*TITULO*/
+.titulo-s{
+    grid-column: x0/x3;
+    grid-row: y1/y2;
+
+    text-align: center;
+}
+
+/*TITULO DE SERVICIOS*/
+.titulosServicios{
+    font-size: 100%;
+    font-weight: 700;
+    text-align: left !important;
+    margin-left: 2px;
+    
+    padding: 30px;
+    
+    
+    background-color: rgb(199, 180, 164);
+}
+
+.titulosServicios:hover{
+    transition: 1s ease;
+
+    background-color: rgb(153, 172, 207);
+    color: black;
+
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.estetica-s{
+    grid-column: x0/x1;
+    grid-row: y2/y3;
+    
+    border-bottom:1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+
+    text-align: center;
+
+}
+
+.peluqueria-s{  
+    grid-column: x0/x1;
+    grid-row: y3/y4;
+    
+    text-align: center; 
+        
+    border-bottom:1px solid black; 
+    border-right:1px solid black; 
+        
+}
+
+.entrenamiento-s{  
+    grid-column: x0/x1;
+    grid-row: y4/y5;
+
+    text-align: center;  
+    
+    border-bottom:1px solid black; 
+    border-right:1px solid black; 
+}
+
+.maquillaje-s{  
+    grid-column: x0/x1;
+    grid-row: y5/y6;
+
+    text-align: center; 
+    
+    border-bottom:1px solid black; 
+    border-right:1px solid black; 
+}
+
+.rebajas-s{  
+    grid-column: x0/x1;
+    grid-row: y6/y7;
+
+    text-align: center;  
+
+    border-bottom:1px solid black; 
+    border-right:1px solid black; 
+}
+.rebajas-s:hover{
+    background-color: rgb(214, 97, 97);
+}
+
+/*SECCION DE PRODUCTOS*/
+.listaProductos{
+    grid-column: x1/x3;
+    grid-row: y2/y8;
+
+    border-top: 1px solid black;
+    
+}
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+ul{
+    list-style: none;
+    margin: 0px;
+    text-align: center;
+    
+   
+}
+
+#lista-productos {
+    padding: 0px !important;
+}
+
+li{
+    background-color: whitesmoke;
+    width:100%;
+    height: 35%;
+
+    padding: 1%;
+
+    display: flex;
+    justify-content: space-between;
+    
+    text-align: center;
+    
+    border-bottom:1px solid black;
+
+}
+
+#lista-productos li:hover{
+    transition: 1s ease;
+    background-color: rgb(234, 203, 203);
+}
+/*PRODUCTOS*/
+img{
+    width: 20% !important ;
+    height: 10% !important;
+    padding: 0% ;
+
+    border-radius: 10px;
+   
+    
+    align-self: center;    
+    align-items: flex-start;
+}
+
+.nombresProductos{
+    width: 20%;
+    padding: 3%;
+    
+    align-self: center;
+
+    font-size: 120%;
+    font-weight: 700;
+    
+    text-align: center;
+
+    
+}
+.descripcionProductos{   
+    width: 33%;
+    padding: 3%;   
+    
+    align-self: center;
+    align-items: center; 
+
+    font-size: 100%;    
+    font-weight: 600;
+    text-align: start;
+   
+}
+
+.precioStock{
+    width: 20%;
+    padding: 4%;
+    
+    align-self: center;
+    text-align: start;
+
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.botonAgregar{
+    width: 15%;
+    height: 10%;
+    
+    align-self: center;    
+    text-align: center;
+
+    font-weight: 600;
+    font-size: 100%;
+
+    background-color: rgb(153, 172, 207);
+    color:black;
+    border: 1px solid grey;
+    border-radius: 10px;
+    
+}
+
+.botonAgregar:hover{     
+    transition: 1s ease;
+
+    background-color: rgb(12, 37, 83);
+    color: white;
+    border: 1px solid black;
+    
+    
+}
+.errorBusqueda{
+    background-color: black;
+    border-left: 10px;
+    border-right: 10px;
+    color: white;
+    font-size: 130%;
+    padding: 15px;
+}
+/**/
+
+.disabled-boton{
+    cursor:not-allowed;
+    opacity: 0.5;
+    background-color: grey;
+    color: white;
+}
+
+.mostrar{
+    display: block;
+
+}
+.quitar{
+    display: none;
+    
+}
+
+/*NO ES RESPONSIVE :(*/
